@@ -1,14 +1,8 @@
 def main():
     x = input("Enter your Name: ")
     house(x)
-    # names(x)
-    match x:
-        case "Shahzaib":
-            print("Loves Afnan")
-        case "Afnan" | "Zara":
-            print("Loves Shahzaib")
-        case _:
-            print("Sorry i've no information about that")
+    names(x)
+
 def house(z):
     # z.strip();
     if z == "Shahzaib" or z == "Rabia" or z == "Sehrish":
@@ -19,11 +13,11 @@ def house(z):
         print("Who?")
 
 def names(z):
-    # match z :
-    #     case "Shahzaib":
-    #         print("Loves Afnan")
-    #     case "Afnan" | "Zara":
-    #         print("Loves Shahzaib")
-    #     case _:
-    #         print("Sorry i've no information about that")
+    match z :
+        case "Shahzaib":
+            print("Loves Afnan")
+        case "Afnan" | "Zara":
+            print("Loves Shahzaib")
+        case _:
+            print("Sorry i've no information about that")
 main()
